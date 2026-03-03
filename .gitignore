@@ -1,0 +1,23 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Logs and temp
+*.log
+logs/
+/tmp/
+
+# Environment
+.env
+
+# Docker
+postgres-data/
+.pgdata/

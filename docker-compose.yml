@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    container_name: utkrusht-sql-basic-db
+    environment:
+      POSTGRES_USER: utkrusht_user
+      POSTGRES_PASSWORD: utkrusht_pass
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init_database.sql:/docker-entrypoint-initdb.d/init_database.sql
